@@ -5,21 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blended Sense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+
     <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
         .container {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* background: #E5E5E5; */
+        }
+        .logo {
+            padding: 1rem;
         }
         .logo img{
             width: 200px;
         }
+        .image-container {
+            position: relative;
+        }
+        .image-container .character{
+            margin-right: -5rem;
+        }
+        .curve {
+            position: absolute;
+            left: 0;
+            z-index: -1;
+        }
+        .image-container .vlc1,
+        .image-container .vlc2{
+            position: absolute;
+            left: 50%;
+            bottom: 5%;
+        }
+        .image-container .vlc2{
+            left: 52%;
+            bottom: 2%;
+        }
+        .text-primary {
+            font-size: 1.5rem;
+            letter-spacing: 0.1rem;
+            font-family: Lato;
+            font-weight: 700;
+        }
+        .text-secondary {
+            color: #828282;
+            margin-top: 0.5rem;
+        }
+        .footer{
+            justify-self: flex-end;
+            margin-top: -2rem;
+        }
+        .copyright{
+            color: #828282;
+            text-align: center;
+            font-family: Lato;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">
-            <img src="./bs_logo.png" alt="bs logo">
+            <img src="./assets/logo.svg" alt="bs logo">
         </div>
-        <div class="text">App under maintenance, We'll be back soon!</div>
+        <div class="image-container">
+            <img class="character" src="./assets/character.svg" alt="character">
+            <img src="./assets/construction.svg" alt="construction">
+            <img class="vlc1" src="./assets/vlc.svg" alt="vlc1">
+            <img class="vlc2" src="./assets/vlc.svg" alt="vlc2">
+            <img class="curve" src="./assets/curve.svg" alt="vlc2">
+        </div>
+        <div class="text-wrapper">
+            <div class="text-primary">
+                We are enhancing the experience for you
+            </div>
+            <div class="text-secondary">We will be back soon..!!</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">© Blended Sense 2022</div>
     </div>
 </body>
 </html>
