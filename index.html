@@ -48,6 +48,9 @@
             left: 52%;
             bottom: 2%;
         }
+        .text-wrapper {
+            padding: 0rem 2rem;
+        }
         .text-primary {
             font-size: 1.5rem;
             letter-spacing: 0.1rem;
@@ -67,6 +70,14 @@
             text-align: center;
             font-family: Lato;
         }
+        @media screen and (max-width: 700px) {
+            .maintainance {
+                width: 20rem;
+            }
+            .curve {
+                width: 100%;
+            }
+        }
 
     </style>
 </head>
@@ -75,18 +86,17 @@
         <div class="logo">
             <img src="./assets/logo.svg" alt="bs logo">
         </div>
-        <div class="image-container">
-            <img class="character" src="./assets/character.svg" alt="character">
-            <img src="./assets/construction.svg" alt="construction">
-            <img class="vlc1" src="./assets/vlc.svg" alt="vlc1">
-            <img class="vlc2" src="./assets/vlc.svg" alt="vlc2">
-            <img class="curve" src="./assets/curve.svg" alt="vlc2">
-        </div>
-        <div class="text-wrapper">
-            <div class="text-primary">
-                We are enhancing the experience for you
+        <div class="main-section">
+            <div class="image-container">
+                <img class="maintainance" src="./assets/maintainance.svg" alt="maintainance">
+                <img class="curve" src="./assets/curve.svg" alt="vlc2">
             </div>
-            <div class="text-secondary">We will be back soon..!!</div>
+            <div class="text-wrapper">
+                <div class="text-primary">
+                    We are enhancing the experience for you
+                </div>
+                <div class="text-secondary">We will be back soon..!!</div>
+            </div>
         </div>
     </div>
     <div class="footer">
